@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.render('index', {basedir: __dirname});
 });
 
-app.get('/api/', function (req, res) {
+app.get('/whoami/', function (req, res) {
   var os = req.header('user-agent').split(')')[0].split('(')[1];
   var language = req.header('accept-language').split(',')[0];
   var ip = req.header('x-forwarded-for');
