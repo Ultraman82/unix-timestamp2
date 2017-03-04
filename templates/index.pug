@@ -1,22 +1,13 @@
 extends whizbang.pug
 
 block head
-  //- Anything you need in the head tag goes here.
-  //- Also, configure your template variables here: baseurl is the base url for your
-  //- API, github is the url for your GitHub repo, and octocatColors are the
-  //- background and octocat colors of the GitHub corner
-  
-  - var baseurl = 'https://your-api-here.com/api/'
-  - var github = 'https://github.com/vivshaw/whizbang'
+  - var baseurl = 'https://whoami-codecamp.herokuapp.com/whoami/'
+  - var github = 'https://github.com/vivshaw/whoami-api'
   - var octocatColors = ['#fff', '#FC60A8']
   
   title whoami
 
 block jumbotron
-  //- Bootstrap jumbotron content goes in here.
-  //- If you want to configure the background gradient colors, head over to
-  //- source/stylesheets/main.styl
-  
   h1.display-3 whoami API
   p
     | Who are you? I really wanna know!
@@ -30,11 +21,6 @@ block jumbotron
     | , and returns a JSON object containing your OS, language, and IP address.
 
 block content
-  //- Page content goes in here.
-  //- You're on Bootstrap, so you can do pretty much whatever you want.
-  //- Consult the awesome Bootstrap docs if you need some help:
-  //- https://v4-alpha.getbootstrap.com/getting-started/introduction/
-  
   .container
       .row
         .col-md-6
@@ -48,7 +34,6 @@ block content
             
           h2 Try it!
           a.btn.btn-primary.themed(href='/whoami/') Who am I?
-          
             
         .col-md-6
           h2 User story:
