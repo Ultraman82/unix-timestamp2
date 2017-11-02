@@ -1,29 +1,28 @@
 {
-  "name": "timestamp",
-  "version": "1.0.0",
-  "description": "timestamp api",
-  "engines": {
-    "node": "4.7.3",
-    "npm": "2.15.11"
-  },
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "my-glitch-app",
+  "version": "0.0.1",
+  "description": "What am I about?",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "stylus source/stylesheets/main.styl -o static/css",
-    "watch-css": "stylus source/stylesheets/main.styl -o static/css -w",
-    "clean": "rm -rf static/css && mkdir -p static/css",
-    "build": "npm run clean && npm run build-css",
-    "watch": "npm run clean && npm run watch-css & nodemon server -e js,pug",
-    "start": "node server",
-    "heroku-postbuild": "npm run build"
+    "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.14.1",
-    "nodemon": "^1.11.0",
-    "octopug": "0.1.0",
-    "pug": "^2.0.0-beta11",
-    "stylus": "^0.54.5"
-  }
+    "express": "^4.16.2",
+    "jade": "^1.11.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/welcome-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
